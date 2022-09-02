@@ -1,0 +1,151 @@
+#header {
+    display: flex;  
+}
+img {
+    display: flex;
+    
+}
+nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center ;
+    background-color: orange;
+    border-radius: 10px;
+}
+ul {
+    display: flex;
+    gap: 5px;
+    
+}
+li {
+    display: flex;
+    gap: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+body {
+    background-color: #eee;
+}
+main {
+   display: grid;
+   
+   justify-items: center;
+}
+#price {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    margin: 5px;
+    width: 600px;
+    text-align: left;
+}   
+#email {
+    padding: 10px 20px 10px 20px;
+    width: 600px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: orange;
+}
+#feature h2 {
+    text-align: center;
+}
+
+form {
+   display: grid;
+   justify-items: center;
+   grid-gap: 10px
+}
+#submit {
+    width: 250px;
+    padding:  10px 20px 10px 20px;
+    background: linear-gradient(orange, rgb(255, 208, 0));
+    border-style: none;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+#submit:hover {
+    animation-name: hover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes hover {
+    100% {
+        transform: scale(1.1);
+    }
+} 
+#lorem {
+    border: solid orange 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#pricing {
+   text-align: center;
+   font-weight: 900;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 50px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+a:hover {
+    animation-name: trans;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+}
+@keyframes trans {
+    100% {
+        transform: translateY(8px);
+    }
+}
+@media(max-width:800px) {
+   nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   img {
+    width: 250px;
+   }
+   #email {
+    width: 250px;
+   }
+   main {
+    display: grid;
+    justify-items: start;
+   }
+   #price {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+   }
+   #lorem {
+    display: flex;
+   }
+   #pricing {
+    font-size: 20px;
+   }
+   nav li {
+    font-size: 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2px;
+   }
+   ul {
+    display: flex;
+    justify-content: space-evenly;
+   }
+   #video {
+    width: 250px;
+    height: 300px;
+   }
+}
